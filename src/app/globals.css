@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(21, 21, 21);
+  padding: 0 16px;
+}
+
+/* Logo */
+.navbar-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  color: #2cdae3;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  margin-right: 16px;
+  transition: color 0.3s;
+}
+
+.desktop-nav .nav-link:hover {
+  color: #2cdae3;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  color: white;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(21, 21, 21);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.menu-items .nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.menu-items .nav-link:hover {
+  color: #2cdae3;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    margin-right: 16px;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+
+
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+
+@media (min-width: 1024px) {
+  .home-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Text Content */
+.text-content {
+  margin-top: 64px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .text-content {
+    text-align: left;
+    margin-left: 64px;
+    margin-top: 128px;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.name {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 5rem;
+  }
+}
+
+.highlight {
+  color: #2cdae3;
+}
+
+.description {
+  margin-top: 24px;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1rem;
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+@media (min-width: 1024px) {
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+.icon {
+  background-color: #2cdae3;
+  border-radius: 50%;
+  padding: 8px;
+  transition: background-color 0.3s;
+}
+
+.icon:hover {
+  background-color: white;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+  background-color: #2cdae3;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 24px;
+  text-align: center;
+  margin-top: 24px;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .download-btn {
+    width: 170px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}
+
+.download-btn:hover {
+  background-color: white;
+  color: #2cdae3;
+}
+
+/* Profile Image */
+.profile-image {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .profile-image {
+    margin-top: 80px;
+  }
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 6px white;
+
+}
+
+@media (min-width: 768px) {
+  .profile-img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  text-align: center;
+}
+
+/* About Section */
+.about-section {
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.about-title {
+  font-size: 3.75rem; /* 60px */
+  font-weight: bold;
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 50px;
+  }
+}
+
+.about-description {
+  font-size: 1.5rem; /* 24px */
+  margin-top: 32px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .about-description {
+    font-size: 20px;
+  }
+}
+
+/* Profile Image */
+.about-image-container {
+  margin-top: 80px;
+}
+
+.about-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 6px white;
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  text-align: center;
+}
+
+/* Skills Section Title */
+.skills-title {
+  font-size: 2.5rem; /* 40px */
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .skills-title {
+    font-size: 3.75rem; /* 60px */
+  }
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    gap: 32px;
+  }
+}
+
+/* Skill Card */
+.skill-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 15px 5px white;
+}
+#one{
+  background-image: url(https://img.freepik.com/free-vector/gradient-code-logo-with-tagline_23-2148811020.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+#two{
+  background-image: url(https://img.freepik.com/premium-vector/css-vector-icon-design-illustration_1174953-23508.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+#three{
+  background-image: url(https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+#four{
+  background-image: url(https://img.freepik.com/premium-vector/create-impact-with-3d-coral-pink-neon-letter-f-icon-dark-backgrounds_462839-8288.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+#five{
+  background-image: url(https://t3.ftcdn.net/jpg/05/50/01/22/240_F_550012297_vt1cUy6CCs7qYHlSa1zm1z0MND9DYwvP.jpg);
+}
+#six{
+  background-image: url(https://img.freepik.com/free-vector/creative-gradient-code-logo_23-2148820572.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+#seven{
+  background-image: url(https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+#eight{
+  background-image: url(https://img.freepik.com/premium-photo/laptop-with-glass-water-screen-with-colorful-firework-display-it_987366-65706.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+}
+
+@media (min-width: 768px) {
+  .skill-card {
+    width: 200px;
+    height: 200px;
+  }
+}
